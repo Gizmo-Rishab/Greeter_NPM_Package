@@ -1,0 +1,27 @@
+{
+  "name": "robo-greeter",
+  "version": "1.3.3",
+  "description": "This is a greeter module, greet today!",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch --runInBand",
+    "prepublish": "jest --runInBand && eslint *.js"
+  },
+  "keywords": [],
+  "bin": {
+    "greeter": "bin/greeter.js"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "author": "Rishab Arora",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0",
+    "jest": "^24.9.0"
+  },
+  "dependencies": {
+    "yargs": "^15.1.0"
+  }
+}
